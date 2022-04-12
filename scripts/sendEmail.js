@@ -5,10 +5,10 @@ const nodemailer = require("nodemailer");
 async function sendEmail(htmlPath) {
     try {
         const mailConfig = {
-            user: env.parsed.EMAIL_USER,
-            password: env.parsed.EMAIL_PASSWORD,
-            supportEmailFrom: env.parsed.SUPPORT_EMAIL_FROM,
-            supportEmailTo: env.parsed.SUPPORT_EMAIL_TO,
+            user: env.parsed.SMTP_USER,
+            password: env.parsed.SMTP_PASSWORD,
+            supportEmailFrom: env.parsed.EMAIL_FROM_ADDRESS,
+            supportEmailTo: env.parsed.EMAIL_TO_ADDRESS,
         }
         
         const htmlBody = fs.readFileSync(htmlPath, "utf8");
