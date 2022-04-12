@@ -1,0 +1,21 @@
+Checkout Receipt
+Auction Outbid
+Auction Won
+Auction Ended
+Submission Receipt
+Submission Accepted
+Submission Rejected
+Auction Reminder
+Order Shipped
+
+-----------------------------------
+
+auction_outbid.html
+auction_won.html
+auction_ended.html
+auction_reminder.html
+checkout_receipt.html
+submission_receipt.html
+submission_accepted.html
+submission_rejected.html
+order_shipped.html
