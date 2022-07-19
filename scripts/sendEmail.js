@@ -35,4 +35,4 @@ async function sendEmail(htmlPath) {
   }
 }
 
-sendEmail("../layout_03.html");
+sendEmail("../Multiple_columns-Tables.html");
