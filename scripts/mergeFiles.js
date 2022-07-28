@@ -15,15 +15,15 @@ async function mergeFiles(staticContentPath, dynamicContentPath){
     const {content: staticContent, head: staticHead, styles: staticHeadStyles, body: staticBody} = getHTMLContent(staticContentPath)
     const {content: dynamicContent, head: dynamicHead, styles: dynamicHeadStyles, body: dynamicBody} = getHTMLContent(dynamicContentPath)
     
-    // to insert at the end of the head
+    // insert dynamic styles at the end of the static head
     // todo: insert after the static style tag?
     for (const style of dynamicHeadStyles) {
         staticHead.appendChild(style)
     }
 
-    // for (const style of mergedStyles) {
-    //     console.log({style})
-    // }
+    // insert dynamic body between the static body's header and footer
+    staticBody.getElementById("body-dynamic").replaceWith(dynamicBody);
+
     // console.log({staticContent, dynamicContent, staticHead, dynamicHead, staticBody, dynamicBody: dynamicBody})
 
     fs.writeFileSync("./output/output.html", staticContent.outerHTML, "utf-8")
