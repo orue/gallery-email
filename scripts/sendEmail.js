@@ -35,4 +35,4 @@ async function sendEmail(htmlPath) {
   }
 }
 
-sendEmail("../table.html");
+sendEmail("../tableWithTemplate.html");
