@@ -20,6 +20,7 @@
   "homepage": "https://github.com/orue/gallery-email#readme",
   "dependencies": {
     "dotenv": "^16.0.0",
+    "node-html-parser": "^5.3.3",
     "nodemailer": "^6.7.3"
   }
 }
