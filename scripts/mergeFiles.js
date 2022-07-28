@@ -10,7 +10,7 @@ function getHTMLContent(filePath) {
     return {content, head, styles, body}
 }
 
-function mergeFiles(staticContentPath, dynamicContentPath){
+function mergeFiles(staticContentPath, dynamicContentPath) {
     const {content: staticContent, head: staticHead, styles: staticHeadStyles, body: staticBody} = getHTMLContent(staticContentPath)
     const {content: dynamicContent, head: dynamicHead, styles: dynamicHeadStyles, body: dynamicBody} = getHTMLContent(dynamicContentPath)
     
